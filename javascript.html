@@ -3,20 +3,24 @@
 <head>
 <title>Tutorial de Alert em JavaScript - Linha de Código</title>
 <script>
-function GetUserData()
+let notas = [];
+function botao1()
 {
-    
+    for (i = 0; i < 4; i++) {
+        notas.push(parseInt(prompt("Insira a nota"))) 
+    }
+    console.log(notas)
 }
 function funcao1()
 {
-alert("Eu sou um alerta de tela!");
-console.log("eu sou um alerta de console!")
+    console.log(notas);
 }
 </script>
 </head>
 <body>
 
-<input type="button" onclick="funcao1()" value="Exibir Alert" />
+<input type="button" onclick="botao1()" value="Notas" />
+<input type="button" onclick="funcao1()" value="teste" />
 
 </body>
 </html></div>
