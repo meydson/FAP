@@ -3,9 +3,15 @@
 <head>
 <title>Tutorial de Alert em JavaScript - Linha de Código</title>
 <script>
-function GetUserData()
+    let peso = []
+function botao2()
+
 {
-    
+    for (i=0 ; i<=3 ; i++) {
+        peso.push(parseInt(prompt('Insira o peso')))
+    }
+    console.log(peso)
+
 }
 function funcao1()
 {
@@ -16,7 +22,7 @@ console.log("eu sou um alerta de console!")
 </head>
 <body>
 
-<input type="button" onclick="funcao1()" value="Exibir Alert" />
+<input type="button" onclick="botao2()" value="Insira seu peso" />
 
 </body>
 </html></div>
