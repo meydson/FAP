@@ -3,6 +3,7 @@
 <head>
 <title>Tutorial de Alert em JavaScript - Linha de Código</title>
 <script>
+
 let notas = [];
 function botao1()
 {
@@ -11,6 +12,15 @@ function botao1()
     }
     console.log(notas)
 }
+
+  let peso = []
+function botao2()
+
+{
+    for (i=0 ; i<=3 ; i++) {
+        peso.push(parseInt(prompt('Insira o peso')))
+    }
+    console.log(peso)
 function teste()
 {
     console.log(notas);
@@ -19,8 +29,11 @@ function teste()
 </head>
 <body>
 
+
 <input type="button" onclick="botao1()" value="Notas" />
 <input type="button" onclick="teste()" value="teste" />
+<input type="button" onclick="botao2()" value="Insira seu peso" />
+
 
 </body>
 </html></div>
