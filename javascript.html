@@ -3,7 +3,17 @@
 <head>
 <title>Tutorial de Alert em JavaScript - Linha de Código</title>
 <script>
-    let peso = []
+
+let notas = [];
+function botao1()
+{
+    for (i = 0; i < 4; i++) {
+        notas.push(parseInt(prompt("Insira a nota"))) 
+    }
+    console.log(notas)
+}
+
+  let peso = []
 function botao2()
 
 {
@@ -11,18 +21,19 @@ function botao2()
         peso.push(parseInt(prompt('Insira o peso')))
     }
     console.log(peso)
-
-}
-function funcao1()
+function teste()
 {
-alert("Eu sou um alerta de tela!");
-console.log("eu sou um alerta de console!")
+    console.log(notas);
 }
 </script>
 </head>
 <body>
 
+
+<input type="button" onclick="botao1()" value="Notas" />
+<input type="button" onclick="teste()" value="teste" />
 <input type="button" onclick="botao2()" value="Insira seu peso" />
+
 
 </body>
 </html></div>
