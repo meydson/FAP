@@ -5,6 +5,8 @@
 <script>
 
 let notas = [];
+let peso = []
+
 function botao1()
 {
     for (i = 0; i < 4; i++) {
@@ -13,24 +15,19 @@ function botao1()
     console.log(notas)
 }
 
-  let peso = []
 function botao2() {
     for (i=0 ; i<=3 ; i++) {
         peso.push(parseInt(prompt('Insira o peso')))
     }
     console.log(peso)
-function teste()
-{
-    console.log(notas);
 }
-}
+
 </script>
 </head>
 <body>
 
 
 <input type="button" onclick="botao1()" value="Notas" />
-<input type="button" onclick="teste()" value="teste" />
 <input type="button" onclick="botao2()" value="Insira seu peso" />
 
 
