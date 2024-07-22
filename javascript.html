@@ -27,24 +27,31 @@ function calcularMedia () {
     let somaRes = 0
     let somaPeso = 0
     let media = 0
-    for (i = 0; i < 4; i++) {
-        res.push(notas[i]*peso[i])
 
+    if(notas.length <= 0 || peso.length <= 0){
+        alert('Não tem nota ou peso para o calculo')
+        
+    }else{
+        for (i = 0; i < 4; i++) {
+            res.push(notas[i]*peso[i])
+            
+        }
+        for (i = 0; i < 4; i++) {
+            somaRes = somaRes+res[i]
+            somaPeso = somaPeso+peso[i]
+            
+        }
+        
+        media=somaRes/somaPeso
+        
+        document.write('A média ponderada é: ',  media, '<br>')
+        document.write('A soma das notas multiplicadas pelo peso é: ',  somaRes, '<br>')
+        document.write(' A soma total dos pesos é: ', somaPeso, '<br>')
+        document.write('<input type="button" onclick="window.location.reload()" value="Recarregar a página" />')
+        console.log(notas.length)
+        console.log(notas)
     }
-    for (i = 0; i < 4; i++) {
-        somaRes = somaRes+res[i]
-        somaPeso = somaPeso+peso[i]
-    }
-    
-    media=somaRes/somaPeso
-
-    console.log('A média é: ' + media)
-    console.log('A soma das notas multiplicadas pelo peso é: ' + somaRes)
-    console.log(' A soma total dos pesos é: ' + somaPeso)
 }
-
-
-
 
 
 </script>
